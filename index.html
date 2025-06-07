@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>V.A.P - Mental Well-being</title>
+
+  <style>
+    /* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container utility */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.site-header {
+  background-color: #ffffffee;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.nav-left li a,
+.nav-right li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-left li a:hover,
+.nav-right li a:hover {
+  text-decoration: underline;
+}
+
+.site-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #3b82f6;
+  text-align: center;
+}
+
+/* HERO WRAPPER adds outer padding */
+.hero-wrapper {
+  padding: 2rem;
+}
+
+/* HERO SECTION */
+#hero {
+  background-image: url('images/Screenshot_24-5-2025_0339_www.bing.com.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+
+  padding: 5rem 3rem;
+  min-height: 80vh;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+/* Optional overlay */
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  border-radius: 1rem;
+}
+
+#hero .container {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+#hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+#hero p {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+#hero button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#hero button:hover {
+  background-color: #2563eb;
+}
+
+  /* Split Section */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fefafa;
+  }
+  
+  .split-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 40px;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  .text-content {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .text-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .text-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #444;
+  }
+  
+  .image-content {
+    flex: 1;
+    min-width: 300px;
+  }
+  .image-bg {
+    background-color: #f3f3f3; /* Light grey background */
+    padding: 20px;
+    border-radius: 12px;
+    display: inline-block;
+  }
+  .image-content img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media (max-width: 768px) {
+    .split-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .text-content,
+    .image-content {
+      width: 100%;
+    }
+  }
+  .explore-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .explore-btn:hover {
+    background-color: #333;
+  }
+  
+  .services-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .service-card {
+    border-radius: 12px;
+    padding: 2rem;
+  }
+  
+  .top-card {
+    background-color: #ffffff;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+  }
+  .services-section .top-card h3 {
+    font-size: 2rem;      
+    font-weight: bold;
+    text-transform: capitalize; 
+    margin-bottom: 1rem;  
+    color: #333;
+    text-align: center; 
+  }
+  
+  
+  .bottom-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .left-card {
+    background-color: #f0f8ff;
+    flex: 1;
+  }
+  
+  .right-card {
+    background-color: #fff5e6;
+    flex: 1;
+  }
+  .learn-more {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.4rem 1rem;
+    color: #333;
+    border: 1px solid #333;
+    background: none;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  
+  .learn-more:hover {
+    color: #fff;
+    background-color: #333;
+  }
+  /* Optional: Responsive for small screens */
+  @media (max-width: 768px) {
+    .bottom-cards {
+      flex-direction: column;
+    }
+  }
+  .testimonials-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 60px 40px;
+    background-color: #f5f5f5;
+  }
+  
+  .testimonial-card {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .testimonial-card.intro {
+    text-align: center;
+    background-color: #f5f5f5;
+  }
+  
+  .testimonial-card h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .testimonial-card p {
+    color: #555;
+  }
+  
+  .quote {
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: auto;
+  }
+  
+  .user-info img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .name {
+    font-weight: bold;
+    color: #222;
+  }
+  
+  .role {
+    font-size: 0.9em;
+    color: #777;
+  }
+  
+  /* Responsive: stack on small screens */
+  @media (max-width: 900px) {
+    .testimonials-section {
+      grid-template-columns: 1fr;
+    }
+  }
+  .explore-section {
+    padding: 4rem 2rem;
+    background-color: #f5f7fa;
+    text-align: center;
+  }
+  
+  .explore-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #222;
+  }
+  
+  .explore-subtitle {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 2.5rem;
+  }
+  
+  .explore-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .explore-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: nowrap; /* Prevent wrapping */
+  }
+
+  .explore-card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    flex: 0 1 300px;
+    text-align: left;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .explore-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  .explore-card h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 0.75rem;
+  }
+  
+  .explore-card p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+  
+  .explore-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-pink {
+    background-color: #e91e63;
+  }
+  
+  .btn-pink:hover {
+    background-color: #d81b60;
+  }
+  
+  .btn-blue {
+    background-color: #3f51b5;
+  }
+  
+  .btn-blue:hover {
+    background-color: #3949ab;
+  }
+  
+  .btn-green {
+    background-color: #4caf50;
+  }
+  
+  .btn-green:hover {
+    background-color: #43a047;
+  }
+  
+  /* Responsive */
+  @media (max-width: 900px) {
+    .explore-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  /* === Community Split Section (Label Removed) === */
+.community-split-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  background-color: #fdfdfd;
+  font-family: 'Segoe UI', sans-serif;
+  gap: 2rem;
+}
+
+.community-text {
+  flex: 1 1 500px;
+  max-width: 600px;
+}
+
+.community-text h2 {
+  font-size: 2.5rem;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.community-text p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.community-btn {
+  background-color: #0073e6;
+  color: white;
+  padding: 0.9rem 1.7rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.community-btn:hover {
+  background-color: #005bb5;
+}
+
+.community-image {
+  flex: 1 1 400px;
+  max-width: 600px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .community-split-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .community-text, .community-image {
+    max-width: 100%;
+  }
+
+  .community-image {
+    height: 300px;
+  }
+}
+
+  .faq {
+    padding: 4rem 2rem;
+    background-color: #FAF3E0;
+  }
+  
+  .faq h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .faq-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+  
+  .faq-left {
+    flex: 1 1 350px;
+    max-width: 500px;
+  }
+  
+  .faq-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+  
+  .faq-question {
+    background: #f1f1f1;
+    padding: 1rem;
+    width: 100%;
+    text-align: left;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .faq-answer {
+    display: none;
+    padding: 1rem;
+    background: #fff;
+    border-top: 1px solid #ddd;
+  }
+  
+  .faq-question.active + .faq-answer {
+    display: block;
+  }
+  
+  .faq-right img {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* GENERAL STYLING */
+.contact-section {
+  background-color: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-subtext {
+  margin-bottom: 2.5rem;
+  color: #555;
+}
+
+/* FLEX CONTAINER */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  max-width: 1100px;
+  margin: auto;
+  text-align: left;
+}
+
+/* LEFT COLUMN */
+.contact-left {
+  flex: 1 1 300px;
+  background-color: #f7f7f7;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.contact-left h3 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.contact-left p {
+  margin: 0.6rem 0;
+}
+
+/* SOCIAL MEDIA ICONS */
+.social-icons {
+  margin-top: 1.5rem;
+}
+
+.social-icons a {
+  color: #333;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #0077b5;
+}
+
+/* RIGHT COLUMN */
+.contact-right {
+  flex: 1 1 350px;
+  background-color: #eaf4ff; /* light blue form background */
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.contact-right h3 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+/* FORM STYLING */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  padding: 0.8rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #555;
+}
+
+.partners-section {
+  background-color: F5F5DC;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.partners-container h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.partners-container p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.partners-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.partners-logos img {
+  max-height: 60px;
+  max-width: 120px;
+  object-fit: contain;
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.partners-logos img:hover {
+ transform: scale(1.05);
+}
+/* Footer Base */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #fefdfb; /* white-beige background */
+  padding: 3rem 2rem;
+  color: #333;
+  gap: 2rem;
+}
+
+/* Right Card */
+.right-card {
+  flex: 1 1 45%;
+  background-color: #fef9c3;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.right-card p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.footer-btn {
+  padding: 0.9rem 2rem;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.footer-btn:hover {
+  background-color: #2563eb;
+}
+/* Left Card */
+.left-card {
+  flex: 1 1 45%;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+  align-items: start;
+}
+
+/* Footer Sections inside Left Card */
+.footer-section h4 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+  color: #444;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #3b82f6;
+}
+
+/* Copyright Row */
+.left-card .copyright {
+  grid-column: 1 / -1; /* spans all columns */
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #777;
+  text-align: center;
+}
+  </style>
+  <link rel="stylesheet" href="projo.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header class=" site-header">
+    <nav class="navbar">
+      <ul class="nav-left">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#shops">Shops</a></li>
+        <li><a href="#events">Events</a></li>
+      </ul>
+      <div class="site-title">V.A.P</div>
+      <ul class="nav-right">
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#log in">Log in</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+  <main>
+    <div class="hero-wrapper">
+      <section id="hero">
+        <div class="container">
+          <h2>Everything You Need All in One Place</h2>
+          <p>Find everything you love, from world-class brands to exclusive deals. Hilldrive Mall is your next favorite place to shop, dine, and connect.</p>
+          <button>Start Exploring</button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+    <!-- How It Works Section -->
+    <section class="split-section">
+      <div class="text-content">
+        <h2>How to get started</h2>
+        <p>
+          All trainning equipments available, from simpall to exclusive equipments. V.A.P insttitution is your favorite place to grow and connect globaly. 
+        </p>
+        <a href="#stores" class="explore-btn">Explore Now</a>
+      </div>
+      <div class="image-content">
+        <div class="image-bg">
+        <img src="c:\Users\Administrator\Downloads\Screenshot_24-5-2025_01155_www.bing.com.jpeg" alt="3d view">
+      </div>
+      </div>
+    </section>
+
+    <!--service section -->
+    <section class="explore-section">
+      <div class="container">
+        <p>services</p>
+        <h2 class="explore-title">The path to Well-being</h2>
+        <p class="explore-subtitle">Discover expert guidance for a healthier mind and balanced life.</p>
+    
+        <div class="explore-cards">
+          <div class="explore-card">
+            <h3>phycality</h3>
+            <p>Guided sessions for phycality techniques.</p>
+            <button class="explore-btn btn-pink">Explore</button>
+          </div>
+          <div class="explore-card">
+            <h3>MindSession</h3>
+            <p>Virtual mind set sessions by professionais.</p>
+            <button class="explore-btn btn-green">Explore</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+          <section class="split-section">
+            <div class="text-content">
+              <h2>Wellness coaching</h2>
+              <p>
+                Personalised gudance to help you build healthier habits,manage stress,and achieve balance in all areas of your life.Our wellness coaches support you in creating sustainable routines for mental,emotional,and physical well-being. 
+              </p>
+              <a href="#stores" class="explore-btn">Explore Now</a>
+            </div>
+            <div class="image-content">
+              <div class="image-bg">
+              <img src="c:\Users\Administrator\Downloads\Screenshot_13-5-2025_16391_www.bing.com.jpeg" alt="guidance,Member view">
+            </div>
+            </div>
+          </section>
+
+
+          <section class="testimonials-section">
+            <div class="testimonial-card intro">
+              <h2>What Our Members Are Saying</h2>
+              <p>Here's what our memberes and visitors are saying about us. Your story could be next!</p>
+            </div>
+          
+            <div class="testimonial-card">
+              <p class="quote">“V.A.P insttitution has helped me atain certificats in IT and also helped me in getting a well paying jop.”</p>
+              <div class="user-info">
+                <img src="https://i.pravatar.cc/100?img=4" alt="Customer 1">
+                <div>
+                  <p class="name">Davis Mushiri</p>
+                  <p class="role">Pro Player</p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="testimonial-card">
+              <p class="quote">“The experience was amazing,playing along side great players like Webster its the best moments have ever herd in my life.”</p>
+              <div class="user-info">
+                <img src="https://i.pravatar.cc/100?img=5" alt="Customer 2">
+                <div>
+                  <p class="name">Rachel Kimani</p>
+                  <p class="role">Pro coder</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="partner-container">
+            <div class="partner-container">
+              <h2>Our Partners</h2>
+              <p>We are proud to collaborate with these top clabs and sponsers:</p>
+          
+              <div class="partners-logos">
+                <img src="c:\Users\Administrator\Downloads\Screenshot_24-5-2025_03947_www.bing.com.jpeg" alt="partner 1 Logo">
+                <img src="c:\Users\Administrator\Downloads\Screenshot_24-5-2025_04037_www.bing.com.jpeg" alt="partner 2 Logo">
+                <img src="c:\Users\Administrator\Downloads\Screenshot_24-5-2025_04140_www.bing.com.jpeg" alt="partner 3 Logo">
+                <img src="c:\Users\Administrator\Downloads\Screenshot_24-5-2025_03835_www.bing.com.jpeg" alt="partner 4 Logo">
+                <!-- Add more logos as needed -->
+              </div>
+            </div>
+          </section>
+          
+
+    <!-- Services Section -->
+    <section class="explore-section">
+      <div class="container">
+        <h2 class="explore-title">Explore V.A.P insttitution</h2>
+        <p class="explore-subtitle">Discover insights, experiences, and exclusive knowledge from every corner of our insttitute.</p>
+    
+        <div class="explore-cards">
+          <div class="explore-card">
+            <h3>For computer classes</h3>
+            <p>Come compite for our medals and cash prisess events happening ones aunaly,join us for more infomation.</p>
+            <button class="explore-btn btn-pink">Explore</button>
+          </div>
+          <div class="explore-card">
+            <h3>Basketball</h3>
+            <p>We normaly compite in all kenyan leages and also compite in intenationall leages.</p>
+            <button class="explore-btn btn-blue">Explore</button>
+          </div>
+          <div class="explore-card">
+            <h3>Football</h3>
+            <p>Enjoy live performances by our wordclass players,as for our aim is to dominate Kenya,African leages and even over seas.</p>
+            <button class="explore-btn btn-green">Explore</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Testimonials Session -->
+    <section class="split-section">
+      <div class="text-content">
+        <h2>You ara not alone this journey</h2>
+        <p>
+          Come less help you in your journey to susses,all u need is right here at V.A.P insttitution. 
+        </p>
+        <a href="#stores" class="explore-btn">Explore Now</a>
+      </div>
+      <div class="image-content">
+        <div class="image-bg">
+        <img src="images/Screenshot_24-5-2025_04648_www.bing.com.jpeg" alt="court view">
+      </div>
+      </div>
+    </section>
+    
+    <section class="faq">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-content">
+        <div class="faq-left">
+          <div class="faq-item">
+            <button class="faq-question"><span>How can i join this inttitution?</span><span class="toggle-icon">+</span></button>
+            <div class="faq-answer">
+              <p>You can join us by herding to upcomimg events and join.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">is it true u offer computer classes?</button>
+            <div class="faq-answer">
+              <p>Yes,just follow the steps as insructerd and sing up.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Do you go for both national na international games?</button>
+            <div class="faq-answer">
+              <p>Yes, we normaly preparer very stiff for such games for the bring us value and revenure.</p>
+            </div>
+          </div>
+          <!-- Add more FAQ items as needed -->
+        </div>
+        <div class="faq-right">
+          <img src="c:\Users\Administrator\Downloads\Screenshot_24-5-2025_05421_www.bing.com.jpeg" alt="FAQ Illustration" />
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+<section class="contact-section">
+  <h2>Have Questions? Reach Out to Us</h2>
+  <p class="contact-subtext">Whether you have questions or just want to connect, we’re here for you.</p>
+
+  <div class="contact-container">
+    <!-- LEFT: CONTACT DETAILS -->
+    <div class="contact-left">
+      <h3>Contact Details</h3>
+      <p><strong>Email:</strong> support@Vijana Amani Pamoja.com</p>
+      <p><strong>Phone:</strong> +254720435476</p>
+      <p><strong>Address:</strong> Blue House 92 St, Kamulu, Nairobi</p>
+
+      <!-- SOCIAL MEDIA ICONS -->
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <!-- RIGHT: MESSAGE FORM -->
+    <div class="contact-right">
+      <h3>Send Us a Message</h3>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-card left-card">
+    <div class="footer-section">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="#">YouTube</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Tiktok</a></li>
+        <li><a href="#">Facebook</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Tours</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    
+    </div>
+    <p class="copyright">
+      © 2035 V.A.P insttitution. All rights reserved.
+    </p>
+  </div>
+
+  <div class="footer-card right-card">
+    <h2>Welcome to Vijana Amani Pamoja(V.A.P)</h2>
+    <p>
+      Discover expert guidance for a healthier mind and balanced life.
+    </p>
+    <button class="footer-btn">Subscribe Now</button>
+  </div>
+</footer>
